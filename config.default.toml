@@ -1,0 +1,12 @@
+[models]
+review_model   = "gemma4:e2b"
+patch_model    = "qwen3.5:4b"
+# patch_model  = "qwen3:4b-instruct-2507-q4_K_M"  # uncomment after pull
+
+[limits]
+max_diff_tokens = 3000
+review_timeout  = 60
+temperature     = 0.2
+
+[git]
+default_diff_base = "HEAD~1"
